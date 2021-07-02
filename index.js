@@ -20,7 +20,7 @@ app.post("/", function(req,res){
   const firstName=req.body.fName;
   const lastName=req.body.lName;
   const email=req.body.email;
-  const phNumber=req.body.phoneNumber;
+  // const phNumber=req.body.phoneNumber;
 
   var data = {
     members:[{
@@ -28,7 +28,7 @@ app.post("/", function(req,res){
       status:"subscribed",
       merge_field: {FNAME: firstName,
                     LNAME: lastName,
-                    PhoneNumer: phNumber
+                    // PhoneNumer: phNumber
                   }
     }
   ]
@@ -60,7 +60,7 @@ app.post("/", function(req,res){
       res.redirect("/");
   });
 
-  console.log(email,firstName,lastName,phNumber);
+  console.log(email,firstName,lastName);
 });
 
 app.listen(process.env.PORT || 3000,function(){
