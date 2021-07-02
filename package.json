@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Michael",
+  "author": "Michael Fan",
   "license": "ISC",
   "engines": {
   "node": "v14.17.1",
   "npm": "7.19.0"
-  }
+},
 
 }

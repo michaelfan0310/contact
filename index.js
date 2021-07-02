@@ -28,7 +28,7 @@ app.post("/", function(req,res){
       status:"subscribed",
       merge_field: {FNAME: firstName,
                     LNAME: lastName,
-                    PHNumber: phNumber,                    
+                    PhoneNumer: phNumber
                   }
     }
   ]
@@ -60,7 +60,7 @@ app.post("/", function(req,res){
       res.redirect("/");
   });
 
-  console.log(firstName,lastName,email);
+  console.log(email,firstName,lastName,phNumber);
 });
 
 app.listen(process.env.PORT || 3000,function(){
